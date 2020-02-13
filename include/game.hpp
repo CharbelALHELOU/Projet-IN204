@@ -2,14 +2,12 @@
 #define GAME_HPP
 
 
-#include <SFML/Graphics.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/System.hpp>
+
 #include <SFML/Audio.hpp>
 #include <string>
 #include <fstream>
 #include <iostream>
-#include <thread>
+
 #include "board.hpp"
 #include "block.hpp"
 

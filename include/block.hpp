@@ -1,12 +1,14 @@
 #ifndef BLOCK_HPP
 #define BLOCK_HPP
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
-
 #include <vector>
 #include <iostream>
 #include "basic_types.hpp"
+
+
 #define total_kinds 8 // total number of forms
 #define nb_kinds 7 // using the first 7 aka the classic ones
 

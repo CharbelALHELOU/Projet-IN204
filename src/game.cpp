@@ -190,7 +190,6 @@ void Game::playingScreen(sf::RenderWindow* window, Point position)
 
 
 
-
 void Game::gameOverState(sf::RenderWindow* window, Point position)
 {
     /*! \brief Prints a game over screen
@@ -268,9 +267,6 @@ void Game::print(sf::RenderWindow* window, Point position)
     else playingScreen(window,position);
     
 }
-
-
-
 
 
 

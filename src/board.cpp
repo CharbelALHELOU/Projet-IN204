@@ -1,7 +1,4 @@
 #include "../include/board.hpp"
-#include <iostream>
-
-#include <SFML/Graphics.hpp>
 
 
 // H et W sont des nmbres de cases pas de pixels

@@ -1,8 +1,5 @@
 #include "../include/block.hpp"
 
-#include <iostream>
-#include <algorithm>
-
 
 // les formes possibles
 std::vector<Point> form[total_kinds]=
