@@ -4,7 +4,7 @@ digraph "Game"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node0 [label="Game",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="localGame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlocalGame.html"];
+  Node1 [label="LocalGame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLocalGame.html"];
   Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="networkGame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnetworkGame.html"];
+  Node2 [label="NetworkGame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNetworkGame.html"];
 }

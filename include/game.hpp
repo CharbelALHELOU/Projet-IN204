@@ -63,7 +63,7 @@ public:
 
 
 ////// LOCAL GAME ////////////
-class localGame: public Game
+class LocalGame: public Game
 {
     /*! \brief Test of our first idea of how a local game should work not very useful 
     */
@@ -72,16 +72,16 @@ class localGame: public Game
     void run(); 
     void save(std::string name);
 
-    localGame(int w, int h): Game(w,h) {}
-    localGame(int w, int h, int startlevel): Game(w,h,startlevel) {}
-    localGame(const std::string& fileName);
-    localGame(){}
-    ~localGame(){}
+    LocalGame(int w, int h): Game(w,h) {}
+    LocalGame(int w, int h, int startlevel): Game(w,h,startlevel) {}
+    LocalGame(const std::string& fileName);
+    LocalGame(){}
+    ~LocalGame(){}
 };
 
 
 ////// NETWORK GAME ////////////
-class networkGame: public Game
+class NetworkGame: public Game
 {
     /*! \brief A game that is able to exchange data (by loading an puting the data from and in a buffer)
     * The starting point of multiplayers mode
@@ -91,10 +91,10 @@ class networkGame: public Game
     void getData(int* buffer);
     void loadData(int* buffer);
 
-    networkGame(int w, int h): Game(w,h) {}
-    networkGame(int w, int h, int startlevel): Game(w,h,startlevel) {} //specific level start
-    networkGame(){}
-    ~networkGame() {}
+    NetworkGame(int w, int h): Game(w,h) {}
+    NetworkGame(int w, int h, int startlevel): Game(w,h,startlevel) {} //specific level start
+    NetworkGame(){}
+    ~NetworkGame() {}
 };
 
 

@@ -59,11 +59,11 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">localGame Member List</div>  </div>
+<div class="title">NetworkGame Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="classlocalGame.html">localGame</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="classNetworkGame.html">NetworkGame</a>, including all inherited members.</p>
 <table class="directory">
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>advance</b>(int dx, bool dy, bool rt) (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>delay</b> (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -72,7 +72,9 @@ $(function() {
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Game</b>() (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>gameBoard</b> (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classGame.html#a865f4c0ef22c4d7ae64241686b28da73">gameOverState</a>(sf::RenderWindow *window, Point position)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getDelay</b>() (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classNetworkGame.html#a0f93a04052988a499c0570e8bdfa2337">getData</a>(int *buffer)</td><td class="entry"><a class="el" href="classNetworkGame.html">NetworkGame</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getDelay</b>() (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getLevel</b>() (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getPrintData</b>() (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>getScore</b>() (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>H</b> (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -80,18 +82,16 @@ $(function() {
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>isGameOver</b>() (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>level</b> (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>linescleared</b> (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>localGame</b>(int w, int h) (defined in <a class="el" href="classlocalGame.html">localGame</a>)</td><td class="entry"><a class="el" href="classlocalGame.html">localGame</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>localGame</b>(int w, int h, int startlevel) (defined in <a class="el" href="classlocalGame.html">localGame</a>)</td><td class="entry"><a class="el" href="classlocalGame.html">localGame</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classlocalGame.html#abaab2cd27a30119e0424468e41ca9608">localGame</a>(const std::string &amp;fileName)</td><td class="entry"><a class="el" href="classlocalGame.html">localGame</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>localGame</b>() (defined in <a class="el" href="classlocalGame.html">localGame</a>)</td><td class="entry"><a class="el" href="classlocalGame.html">localGame</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classNetworkGame.html#a38750c7993228c3433ebad5cde3a2d76">loadData</a>(int *buffer)</td><td class="entry"><a class="el" href="classNetworkGame.html">NetworkGame</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>NetworkGame</b>(int w, int h) (defined in <a class="el" href="classNetworkGame.html">NetworkGame</a>)</td><td class="entry"><a class="el" href="classNetworkGame.html">NetworkGame</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>NetworkGame</b>(int w, int h, int startlevel) (defined in <a class="el" href="classNetworkGame.html">NetworkGame</a>)</td><td class="entry"><a class="el" href="classNetworkGame.html">NetworkGame</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>NetworkGame</b>() (defined in <a class="el" href="classNetworkGame.html">NetworkGame</a>)</td><td class="entry"><a class="el" href="classNetworkGame.html">NetworkGame</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>nextBlock</b> (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>nextBPos</b> (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classGame.html#a23bb72d4e569583ac9acc360354142f6">playingScreen</a>(sf::RenderWindow *window, Point position)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classGame.html#a3327636c2338a803df41e27afe7dfaee">print</a>(sf::RenderWindow *window, Point position)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>rectSize</b> (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classGame.html#a39bb2fd26b5ea6b164f28f9f6723582e">reset</a>()</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classlocalGame.html#a5147fa06a01e5dcfcd799ac5eb35769d">run</a>()</td><td class="entry"><a class="el" href="classlocalGame.html">localGame</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classlocalGame.html#affeb6e98aaaabb64be52d6a10ab458e8">save</a>(std::string name)</td><td class="entry"><a class="el" href="classlocalGame.html">localGame</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>score</b> (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>scoretable</b> (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classGame.html#abd31443600d88499791ff4b9f0b85015">setLevel</a>(int givenlevel)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"></td></tr>
@@ -103,7 +103,7 @@ $(function() {
   <tr bgcolor="#f0f0f0"><td class="entry"><b>W</b> (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>windowSize</b> (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>~Game</b>() (defined in <a class="el" href="classGame.html">Game</a>)</td><td class="entry"><a class="el" href="classGame.html">Game</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~localGame</b>() (defined in <a class="el" href="classlocalGame.html">localGame</a>)</td><td class="entry"><a class="el" href="classlocalGame.html">localGame</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~NetworkGame</b>() (defined in <a class="el" href="classNetworkGame.html">NetworkGame</a>)</td><td class="entry"><a class="el" href="classNetworkGame.html">NetworkGame</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

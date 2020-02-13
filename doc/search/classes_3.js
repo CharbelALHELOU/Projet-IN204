@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['manager',['Manager',['../classManager.html',1,'']]]
+  ['networkgame',['NetworkGame',['../classNetworkGame.html',1,'']]]
 ];

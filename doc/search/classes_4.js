@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['networkgame',['networkGame',['../classnetworkGame.html',1,'']]]
+  ['player',['Player',['../classPlayer.html',1,'']]],
+  ['point',['Point',['../classPoint.html',1,'']]]
 ];

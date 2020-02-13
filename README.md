@@ -10,5 +10,7 @@ Make all
 In manager, g++ manager.cpp mainManager.cpp -lsfml-network
 
 ## DOC
-In html, open index.html in a web browser
+In doc, open index.html in a web browser
 
+## src contains source code
+## include contains the to be included files

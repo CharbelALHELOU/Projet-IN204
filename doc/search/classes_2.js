@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['localgame',['localGame',['../classlocalGame.html',1,'']]]
+  ['localgame',['LocalGame',['../classLocalGame.html',1,'']]]
 ];

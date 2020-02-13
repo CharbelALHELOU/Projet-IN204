@@ -21,7 +21,7 @@ class Player
 {
     protected:
     int playerID;
-    std::vector <networkGame> games ;
+    std::vector <NetworkGame> games ;
     std::vector <int> exitedPlayer;
     int W,H;
     status myStatus;

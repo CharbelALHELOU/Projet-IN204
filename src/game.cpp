@@ -136,8 +136,8 @@ void Game::playingScreen(sf::RenderWindow* window, Point position)
         {
             s.setPosition(position.x + (p.x+ currentBlock.getShape()[i].x)*rectSize+1,position.y+ (H- p.y + currentBlock.getShape()[i].y-1)*rectSize);
             shadowsR.setPosition(position.x + (pAfter.x+ currentBlock.getShape()[i].x)*rectSize+1,position.y+ (H- pAfter.y + currentBlock.getShape()[i].y-1)*rectSize);
-            window->draw(shadowsR);
-            window->draw(s);
+            window->draw(shadowsR);// print projection of current block
+            window->draw(s);//print current block
         }
 
     //print score text
@@ -274,7 +274,7 @@ void Game::print(sf::RenderWindow* window, Point position)
 
 
 
-void networkGame::getData(int* buffer)
+void NetworkGame::getData(int* buffer)
 {
     /*! \brief Put the data of the game in a buffer
     * Aims to send the data through a network
@@ -284,7 +284,8 @@ void networkGame::getData(int* buffer)
     buffer[1]=H;
     buffer[2] = (int) gameBoard.getGrid().size();
     buffer[3] = score;
-    int i=4;
+    buffer[4] = level;
+    int i=5;
     //TODO: one loop can do the job
     for (auto x : gameBoard.getCurrentBlock().getData()) {buffer[i] = x;i++;}
     for (auto x : nextBlock.getData()) {buffer[i] = x;i++;}
@@ -294,7 +295,7 @@ void networkGame::getData(int* buffer)
     }
 }
 
-void networkGame::loadData(int* buffer)
+void NetworkGame::loadData(int* buffer)
 {
     /*! \brief Load data from a given buffer
     * Allows us to load data received on a network
@@ -303,15 +304,16 @@ void networkGame::loadData(int* buffer)
     H= buffer[1];
     int gridSize= buffer[2];
     score = buffer[3];
-    gameBoard.setCurrentBlock({{buffer[4],buffer[5]},(Color) buffer[6], (Kind) buffer[7], buffer[8]});
-    nextBlock = {{buffer[9],buffer[10]},(Color) buffer[11], (Kind) buffer[12],buffer[13]};
+    setLevel(buffer[4]);
+    gameBoard.setCurrentBlock({{buffer[5],buffer[6]},(Color) buffer[7], (Kind) buffer[8], buffer[9]});
+    nextBlock = {{buffer[10],buffer[11]},(Color) buffer[12], (Kind) buffer[13],buffer[14]};
     std::vector < std::vector <int> > newGrid;
     for (int i=0; i < (gridSize*W); i+=W)
         {
             std::vector <int> row;
             for (int j=0; j<W;j++)
                 {
-                    row.push_back(buffer[14+i+j]);
+                    row.push_back(buffer[15+i+j]);
                 }
             newGrid.push_back(row);
         }
@@ -323,7 +325,7 @@ void networkGame::loadData(int* buffer)
 ////////////////////////////////////////////////////////////////////////////////////////
 
 
-localGame::localGame (const std::string& fileName)
+LocalGame::LocalGame (const std::string& fileName)
 {// TODO : Check if the file is indeed a Game file
     /*! \brief Load a game from a local file
     */
@@ -366,7 +368,7 @@ localGame::localGame (const std::string& fileName)
 
 
 
-void localGame::save(std::string name)
+void LocalGame::save(std::string name)
 {
     /*! \brief Save the game in a file localy
     */
@@ -390,7 +392,7 @@ void localGame::save(std::string name)
 
 
 
-void localGame::run()
+void LocalGame::run()
 {
     /*! \brief Runs a Local game
     * First idea just to test (no levels same delay )
