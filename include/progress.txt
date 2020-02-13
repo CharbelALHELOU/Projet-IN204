@@ -1,0 +1,7 @@
+
+
+//trying to add sounds to actions with multithreading
+
+//creating a network manager
+
+//creating an AI tetris.
