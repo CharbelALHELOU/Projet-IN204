@@ -4,7 +4,7 @@
 
 int main ( int nargs, char* argv[])
 {
-    Player play(10,20,10,P2); // (Width, Height, starting Level)
+    Player play(10,20,10,SOLO); // (Width, Height, starting Level,game mode)
     // if you want multi joueur change solo to p2,p3 or p4
     //play.random(); to ask the manager for a game
     //play.joinRoom(); to join your friends in a room
