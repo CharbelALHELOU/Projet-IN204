@@ -9,7 +9,7 @@ int main ( int nargs, char* argv[])
     //play.random(); to ask the manager for a game
     //play.joinRoom(); to join your friends in a room
     //play.createRoom(); to create a room
-    play.createRoom();
+    // if no method is called before run it will still display
     play.run(); 
 
     //LocalGame local(10,20);

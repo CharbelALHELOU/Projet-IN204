@@ -83,13 +83,12 @@ void Player::run()
 		if (games[0].isGameOver())
 		{
 			if (first) {startmusic.stop(); gameOverSound.play(); first = false;}
-		}
-		else
-		{ 
+
 			// checking if all games are over
 			bool partyOver =true;
 			for (unsigned int i=0; i<games.size(); i++) partyOver &= games[i].isGameOver(); 
-			if (partyOver) {
+			if (partyOver) 
+			{
 			int winner=0;
 			// looking for the winner
 			for (unsigned i=1; i< games.size(); i++) {if (games[i].getScore() > games[winner].getScore()) winner = i;}
@@ -100,6 +99,7 @@ void Player::run()
 		
 		window.display();
 	}
+	// Tell the server i left (if am the server can i quit?!)
 	int buffer[sizeBuffer];
 	for (int i=0; i < sizeBuffer; i++) buffer[i] =0;
 	socket.send(buffer,sizeof(buffer),serverIP,port);
@@ -130,7 +130,7 @@ void Player::createRoom()
 }
 
 
-void Player::joinRoom()
+void Player::joinRoom() // could take an argumant IP adress 
 {
 	/*! \brief Connects to the serverIp
 	*/
