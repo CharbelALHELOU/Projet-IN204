@@ -85,15 +85,18 @@ void Player::run()
 			if (first) {startmusic.stop(); gameOverSound.play(); first = false;}
 
 			// checking if all games are over
-			bool partyOver =true;
-			for (unsigned int i=0; i<games.size(); i++) partyOver &= games[i].isGameOver(); 
-			if (partyOver) 
+			if (games.size() > 1)
 			{
-			int winner=0;
-			// looking for the winner
-			for (unsigned i=1; i< games.size(); i++) {if (games[i].getScore() > games[winner].getScore()) winner = i;}
-			std::cout << "THE WINNER IS PLAYER " << winner << std::endl;
-			window.close(); 
+				bool partyOver =true;
+				for (unsigned int i=0; i<games.size(); i++) partyOver &= games[i].isGameOver(); 
+				if (partyOver) 
+				{
+					int winner=0;
+					// looking for the winner
+					for (unsigned i=1; i< games.size(); i++) {if (games[i].getScore() > games[winner].getScore()) winner = i;}
+					std::cout << "THE WINNER IS PLAYER " << winner << std::endl;
+					window.close(); 
+				}
 			}
 		}
 		
