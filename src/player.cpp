@@ -153,7 +153,7 @@ bool Player::communicate()
 	*/
 	if (myStatus == SERVER)
 	{
-		int buffer[games.size()*sizeBuffer]= {-22};
+		int buffer[games.size()*sizeBuffer];
 		// recv data from all the other players
 		for (unsigned i=1; i< (games.size()-exitedPlayer.size()); i++) // wait for the remain players
 		{
