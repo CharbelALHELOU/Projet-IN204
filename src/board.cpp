@@ -1,6 +1,5 @@
 #include "../include/board.hpp"
 
-
 // H et W sont des nmbres de cases pas de pixels
 
 Board::Board(int w, int h): W(w), H(h)

@@ -10,12 +10,12 @@
 
 
 #define total_kinds 8 // total number of forms
-#define nb_kinds 7 // using the first 7 aka the classic ones
+//#define nb_kinds 7 // using the first 7 aka the classic ones
 
-
-
+extern int nb_kinds;
+extern std::vector <std::vector < Point>> form;
 enum Color {RED, GREEN, BLUE, CYAN, MAGENTA, YELLOW, WHITE, BLACK} ;
-enum Kind {square, I, L, mirL, N, mirN, T, cross};
+enum Kind {square, I, L, mirL, N, mirN, T};
 
 class Block
 {
@@ -24,7 +24,6 @@ class Block
     void moveHorz(int dx);
     void goDown();
     void rotate();
-    void print (int printSize, Point pos, sf::RenderWindow* window);
 
     Color getColor() {return color;}
     Kind getKind() {return kind;}
@@ -42,7 +41,7 @@ class Block
     std::vector <int> getData();
 
     void setPosition(Point newPos) {position=newPos;}
-    
+
     protected:
     Point dims;
     Point position;
@@ -51,7 +50,7 @@ class Block
     Kind kind;
     int rotation;
 };
-
+/*
 class Square: public Block
 {
     Square(Point pos, Color c): Block(pos,c,square){}
@@ -59,5 +58,5 @@ class Square: public Block
     Square():Block(){}
     ~Square(){}
 };
-
+*/
 #endif

@@ -26,7 +26,7 @@ class Player
     int W,H;
     status myStatus;
     int sizeBuffer;
-    sf::IpAddress serverIP = "147.250.8.143" ;
+    sf::IpAddress serverIP = "147.250.8.42" ;
     std::map<sf::IpAddress,int> otherPlayersIP;
     sf::UdpSocket socket;
     unsigned short port=8080;

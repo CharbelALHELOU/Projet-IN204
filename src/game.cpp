@@ -1,6 +1,5 @@
 #include "../include/game.hpp"
 
-
 sf::Color Colors[8] = {sf::Color(212, 41, 41) , sf::Color(38, 223, 63) , sf::Color(38, 88, 223) , sf::Color(38, 205, 223) , sf::Color(223, 38, 131) , sf::Color(223, 223, 38), sf::Color(255, 255, 255), sf::Color(21, 21, 21, 200)};
 
 Game::Game(int w, int h): W(w), H(h)
