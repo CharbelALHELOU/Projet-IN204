@@ -40,6 +40,7 @@ class Player
     bool communicate();
     void run();
 
+    void setServerIp(std::string adress) {serverIP = adress;}
     Player(int w, int h, mode m );
     Player(int w, int h, int startlevel, mode m);
     Player(){}
