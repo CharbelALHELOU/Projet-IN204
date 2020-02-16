@@ -49,6 +49,7 @@ int main ( int nargs, char* argv[])
         std::cin >> H;
         std::cout << "Level: \n";
         std::cin >> level;
+        nb_kinds = form.size();
         Player play(W,H,level, (mode) (nb_players-1));
         if (nb_players > 1)
         {
