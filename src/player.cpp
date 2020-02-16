@@ -4,7 +4,6 @@ Player::Player(int w, int h, mode m): W(w), H(h)
 {
 	/*! \brief Constructor sets the level at 0
 	*/
-	nb_kinds = 7; // only uses the standard forms so we don 't have problems
 	games.emplace_back(NetworkGame {w,h}); 
 	if (m != SOLO) {for (int i=0; i<m;i++) games.emplace_back(NetworkGame {w,h}); }
     sizeBuffer= 15+w*h;
@@ -16,7 +15,6 @@ Player::Player(int w, int h, int startlevel, mode m): W(w), H(h)
 {
 	/*! \brief Constructor sets the level at startlevel
 	*/
-	nb_kinds =7;
 	games.reserve(m+1);
 	games.emplace_back(NetworkGame {w,h,startlevel}); 
 	if (m != SOLO) {for (int i=0; i<m;i++) games.emplace_back(NetworkGame {w,h,startlevel}); }

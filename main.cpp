@@ -3,7 +3,7 @@
 
 void loadForms()
 {
-    /* load shapes from form.txt (add them to the cassical forms)*/
+    /* load shapes from form.txt (add them to the classical forms)*/
     char x;
     std::ifstream inFile;
     inFile.open("form.txt");
@@ -53,6 +53,7 @@ int main ( int nargs, char* argv[])
         Player play(W,H,level, (mode) (nb_players-1));
         if (nb_players > 1)
         {
+            nb_kinds=7; // everyone should have the same forms
             std::cout << "what mode:\n 1 create room\n 2 join room\n 3 play random\n";
             int m;
             std::cin >> m;
